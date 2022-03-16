@@ -19,5 +19,5 @@ jobs:
           passcode: ${{secrets.PASSCODE}}
           message: |
              '[{
-             to: "mitch.chanza@gmail.com"
+             "to": "mitch.chanza@gmail.com"
              }]'
