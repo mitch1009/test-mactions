@@ -10,12 +10,14 @@ jobs:
     steps:
       - name: build step
         id: building
-        uses: mitch1009/maction@v0.0.5
+        uses: mitch1009/maction@v0.0.6
         with:
           who-to-greet: "Ochanza"
           host: ${{secrets.HOST}}
           port: ${{secrets.PORT}}
           user: ${{secrets.USER}}
           passcode: ${{secrets.PASSCODE}}
-          message: '[{"to": "mitch.chanza@gmail.com"}]'
+          recipients: '[{"to": "mitch.chanza@gmail.com"}]'
+          message: ${{ github.event.head_commit.message }},
+          subject: "New Aupdates"
           # upgrades
