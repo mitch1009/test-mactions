@@ -18,3 +18,4 @@ jobs:
           user: ${{secrets.USER}}
           passcode: ${{secrets.PASSCODE}}
           message: '[{"to": "mitch.chanza@gmail.com"}]'
+          # upgrades
