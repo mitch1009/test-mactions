@@ -10,10 +10,14 @@ jobs:
     steps:
       - name: build step
         id: building
-        uses: mitch1009/maction@v0.0.2
+        uses: mitch1009/maction@v0.0.3
         with:
           who-to-greet: "Ochanza"
           host: ${{secrets.HOST}}
           port: ${{secrets.PORT}}
           user: ${{secrets.USER}}
           passcode: ${{secrets.PASSCODE}}
+          message: |
+             '[{
+             to: "mitch.chanza@gmail.com"
+             }]'
