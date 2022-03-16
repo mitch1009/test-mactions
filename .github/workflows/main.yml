@@ -1,0 +1,19 @@
+name: Master CI
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Custom Job to send email status of builds
+    steps:
+      - name: build step
+        id: building
+        uses: mitch1009/maction@v0.0.1
+        with:
+          who-to-greet: "Ochanza"
+          host: ${{secrets.HOTS}}
+          port: ${{secrets.PORT}}
+          user: ${{secrets.USER}}
+          passcode: ${{secrets.PASSCODE}}
