@@ -13,7 +13,7 @@ jobs:
         uses: mitch1009/maction@v0.0.2
         with:
           who-to-greet: "Ochanza"
-          host: ${{secrets.HOTS}}
+          host: ${{secrets.HOST}}
           port: ${{secrets.PORT}}
           user: ${{secrets.USER}}
           passcode: ${{secrets.PASSCODE}}
