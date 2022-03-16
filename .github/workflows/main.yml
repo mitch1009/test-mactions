@@ -6,7 +6,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Custom Job to send email status of builds
+    name: Custom Job - Made in Malawi
     steps:
       - name: build step
         id: building
