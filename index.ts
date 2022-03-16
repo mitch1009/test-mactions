@@ -6,3 +6,5 @@ export interface numbers {
     a:number
     b:number
 }
+
+additions({a:6,b:7})
