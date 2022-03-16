@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: build step
         id: building
-        uses: mitch1009/maction@v0.2.0
+        uses: mitch1009/maction@v2
         with:
           who-to-greet: "Ochanza"
           host: ${{secrets.HOST}}
