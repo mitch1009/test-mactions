@@ -1,6 +1,6 @@
 {
   "name": "tmaction",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "index.js",
   "scripts": {
     "build": "tsc && git add . && git commit -m",
@@ -9,7 +9,6 @@
     "delocal": "git ls-remote --tags --refs origin | cut -f2 | xargs git push origin --delete ",
     "only": "git push --follow-tag",
     "del": "node retag.js",
-
     "commit": "git add . && git commit -m",
     "tag": "git tag -a -m \" v$npm_package_version release\" v$npm_package_version ",
     "comTag": "git push --follow-tag"
@@ -26,9 +25,7 @@
   },
   "homepage": "https://github.com/mitch1009/test-mactions#readme",
   "description": "",
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
