@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: '14'
       - name: auto version
-        uses: mitch1009/autoversion
+        uses: mitch1009/autoversion@v1.0.0
         with:
           override: true
       - name: build step

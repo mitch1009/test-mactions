@@ -1,6 +1,6 @@
 {
   "name": "tmaction",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "scripts": {
     "build": "tsc && git add . && git commit -m",
