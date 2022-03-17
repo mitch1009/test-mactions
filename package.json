@@ -1,10 +1,14 @@
 {
   "name": "tmaction",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
     "build": "tsc && git add . && git commit -m",
-    "test": "git push --follow-tag"
+    "test": "git push --follow-tag",
+    "gulp": "gulp ",
+    "commit": "git add . && git commit -m",
+    "tag": "git tag -a -m \" v$npm_package_version release\" v$npm_package_version ",
+    "comTag": "git push --follow-tag"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +23,11 @@
   "homepage": "https://github.com/mitch1009/test-mactions#readme",
   "description": "",
   "dependencies": {
+
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
     "sass": "^1.49.9"
   }
 }

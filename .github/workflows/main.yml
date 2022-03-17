@@ -8,9 +8,17 @@ jobs:
     runs-on: ubuntu-latest
     name: Custom Job - Made in Malawi
     steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: auto version
+        uses: mitch1009/autoactionv@1
+        with:
+          override: true
       - name: build step
         id: building
-        uses: mitch1009/maction@v2
+        uses: mitch1009/maction@v2 # Very proud of my workflow.
         with:
           who-to-greet: "Ochanza"
           host: ${{secrets.HOST}}
@@ -20,3 +28,4 @@ jobs:
           recipients: '[{"email": "mitch.chanza@gmail.com", "name":"Mitch Chanza"}]'
           message: ${{ github.event.head_commit.message }}
           # upgrades to v2
+
