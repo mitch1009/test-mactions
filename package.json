@@ -1,13 +1,13 @@
 {
   "name": "tmaction",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "scripts": {
     "build": "tsc && git add . && git commit -m",
     "test": "git push --follow-tag",
     "gulp": "gulp ",
     "delocal": "git ls-remote --tags --refs origin | cut -f2 | xargs git push origin --delete ",
-
+    "only": "git push --follow-tag",
     "del": "node retag.js",
 
     "commit": "git add . && git commit -m",
