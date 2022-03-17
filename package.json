@@ -6,7 +6,7 @@
     "build": "tsc && git add . && git commit -m",
     "test": "git push --follow-tag",
     "gulp": "gulp ",
-    "commit": "git add . && git commit -m ",
+    "commit": "git add . && git commit -m $Prompt",
     "tag": "git tag -a -m \" v$npm_package_version release\" v$npm_package_version ",
     "comTag": "git push --follow-tag"
   },
