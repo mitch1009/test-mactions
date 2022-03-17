@@ -6,7 +6,11 @@
     "build": "tsc && git add . && git commit -m",
     "test": "git push --follow-tag",
     "gulp": "gulp ",
-    "commit": "git add . && git commit -m $Prompt",
+    "delocal": "git ls-remote --tags --refs origin | cut -f2 | xargs git push origin --delete ",
+
+    "del": "node retag.js",
+
+    "commit": "git add . && git commit -m",
     "tag": "git tag -a -m \" v$npm_package_version release\" v$npm_package_version ",
     "comTag": "git push --follow-tag"
   },
