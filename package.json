@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc && git add . ",
-    "test": "git push --follow-tag",
+    "test": "echo reeds",
     "gulp": "gulp ",
     "aversion": "node ./retag.js",
     "commit": " git commit -m",
