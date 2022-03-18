@@ -6,7 +6,7 @@
     "build": "tsc && git add . ",
     "test": "git push --follow-tag",
     "gulp": "gulp ",
-    "aversion": "npm version patch -m \"Upgrade to %s \"",
+    "aversion": "npm version patch -m \"Upgrade to %s hu \"",
     "commit": " git commit -m",
     "tag": "git tag -a -m \" v$npm_package_version release\" v$npm_package_version ",
     "comTag": "git push --follow-tag"
