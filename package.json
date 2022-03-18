@@ -3,13 +3,12 @@
   "version": "1.0.10",
   "main": "index.js",
   "scripts": {
+    "test": "echo new version $npm_package_version",
     "build": "tsc && git add . ",
-    "test": "echo reeds",
-    "gulp": "gulp ",
+    "commit": " git commit -m ",
     "aversion": "node ./retag.js",
-    "commit": " git commit -m",
-    "tag": "git tag -a -m \" v$npm_package_version release\" v$npm_package_version ",
-    "comTag": "git push --follow-tag"
+    "tag": "git tag -a -m \" v$npm_package_version release\" v$npm_package_version && git push --follow-tag",
+    "gulp": "gulp "
   },
   "keywords": [],
   "author": "",
