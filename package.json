@@ -3,13 +3,11 @@
   "version": "1.0.7",
   "main": "index.js",
   "scripts": {
-    "build": "tsc && git add . && git commit -m",
+    "build": "tsc && git add . ",
     "test": "git push --follow-tag",
     "gulp": "gulp ",
-    "delocal": "git ls-remote --tags --refs origin | cut -f2 | xargs git push origin --delete ",
-    "only": "git push --follow-tag",
-    "del": "node retag.js",
-    "commit": "git add . && git commit -m",
+    "aversion": "npm version patch -m \"Upgrade to %s \"",
+    "commit": " git commit -m",
     "tag": "git tag -a -m \" v$npm_package_version release\" v$npm_package_version ",
     "comTag": "git push --follow-tag"
   },
